@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenDream Lawn Care</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0fdf4;
+      color: #2f4f2f;
+    }
+    header {
+      background-color: #3ba55d;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background-color: #2e7d32;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601366533287-12d21e4e3990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2em;
+    }
+    .content {
+      padding: 2em;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+    }
+    .service {
+      background-color: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .quote-button {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+    }
+    .quote-button a {
+      background-color: #3ba55d;
+      color: white;
+      padding: 0.8em 1.5em;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .quote-button a:hover {
+      background-color: #2e7d32;
+    }
+    form {
+      background-color: white;
+      padding: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #3ba55d;
+      color: white;
+      padding: 0.7em 1.5em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GreenDream Lawn Care</h1>
+    <p>Where Your Lawn Meets Perfection</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <div>
+      Professional Lawn Care Services
+    </div>
+  </section>
+  <section class="content" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Lawn Mowing</h3>
+        <p>Keep your yard neat and healthy with regular mowing services.</p>
+      </div>
+      <div class="service">
+        <h3>Fertilization</h3>
+        <p>Boost your lawn's health and color with custom fertilization plans.</p>
+      </div>
+      <div class="service">
+        <h3>Weed Control</h3>
+        <p>Eliminate weeds and let your grass thrive with safe treatments.</p>
+      </div>
+    </div>
+    <div class="quote-button">
+      <a href="#contact">Solicita un presupuesto</a>
+    </div>
+  </section>
+  <section class="content" id="about">
+    <h2>About GreenDream</h2>
+    <p>GreenDream is a locally owned lawn care company committed to keeping your green spaces beautiful and healthy. With years of experience and a passion for landscaping, we bring professionalism and care to every lawn we treat.</p>
+  </section>
+  <section class="content" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/alisandrocid11@gmail.com" method="POST">
+      <input type="hidden" name="_next" value="gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+  <footer>
+    &copy; 2025 GreenDream Lawn Care. All rights reserved.
+  </footer>
+</body>
+</html>
